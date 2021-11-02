@@ -1,0 +1,194 @@
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-height: calc(100vh - 150px);
+    /* height: 400px; */
+    color: rgba(255, 130, 0, 0.95);
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    background-color: #F0F2F5;
+}
+
+/* Form */
+.container .form {
+    width: 400px;
+    justify-content: center;
+    height: 400px;
+    padding-top: 40px;
+}
+
+.container .winner{
+    font-size: 24px;
+    height: 400px;
+    padding-top: 40px;
+}
+
+.container .winner .btn{
+    background-color: rgba(255, 130, 0, 0.95);
+    padding: 10px;
+    color: white;
+    border: 1px solid rgba(255, 130, 0, 0.95);
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container .winner .btn:hover{
+    background-color: rgba(255, 130, 0, 0.6);
+    border-color: rgba(255, 130, 0, 0.6) ;
+}
+
+.container .header {
+    max-height: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .header img {
+    width: 100%;
+    position: absolute;
+    top: 30px ;
+
+}
+
+
+.container .footer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .footer img{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.example{
+    margin: 20px 0;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.spinner{
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(255, 130, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Input */
+.container-input {
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 6px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+	font-size:16px; 
+	font-weight:normal;
+	font-family: 'Lato';
+}
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #fff;
+    background-color: rgba(255, 130, 0, 0.95);
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: rgba(255, 130, 0, 0.6);
+}
+
+
+
+/* .custom-input-file {
+    background-color: rgba(255, 130, 0, 0.95);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 0;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid rgba(255, 130, 0, 0.95);
+    margin: 10px;
+  }
+
+ 
+  
+  .custom-input-file .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 10000px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+   right: -1000px;
+   top: -1000px;
+  } */
