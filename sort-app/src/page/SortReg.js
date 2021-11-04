@@ -3,7 +3,7 @@ import XLSX from 'xlsx';
 import { Card, Col, Row, Spin } from 'antd';
 import { Typography } from 'antd';
 import { LoadingOutlined, RightOutlined } from '@ant-design/icons';
-import fanta from '../assets/fanta.png'
+import fanta from '../assets/logo.jpeg'
 import { notification } from "antd";
 import '../sorteoApp.css';
 import { useSort } from '../hooks/useSort';
@@ -82,7 +82,8 @@ export const SortReg = () => {
                 nummero: ''
             };
         }
-        const { nombre, numero } = users[numGanador];
+        const nombre = users[numGanador]['Nombre completo']
+        const numero = users[numGanador].Teléfono
 
         return {
             nombre,
@@ -160,7 +161,7 @@ export const SortReg = () => {
             <Spin spinning={loading} size="large" tip="Cargando..." indicator={antIcon} >
                 <div className="container">
                     <div className="header">
-                        <Title style={{ color: 'rgba(255, 130, 0, 0.95)', marginTop: '10px' }}>Sorteo Región N° {sortsReg + 1}</Title>
+                        <Title style={{ color: '#059436', marginTop: '10px' }}>Sorteo Embono N° {sortsReg + 1}</Title>
                         <img
                             src={fanta}
                             alt="logo_fanta"

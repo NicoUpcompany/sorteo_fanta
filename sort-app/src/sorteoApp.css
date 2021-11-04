@@ -7,7 +7,7 @@
     align-items: center;
     max-height: calc(100vh - 150px);
     /* height: 400px; */
-    color: rgba(255, 130, 0, 0.95);
+    color: #059436 ;
     font-size: 30px;
     font-weight: bold;
     position: relative;
@@ -29,18 +29,18 @@
 }
 
 .container .winner .btn{
-    background-color: rgba(255, 130, 0, 0.95);
+    background-color: #059436 ;
     padding: 10px;
     color: white;
-    border: 1px solid rgba(255, 130, 0, 0.95);
+    border: 1px solid #059436 ;
     width: 100%;
     border-radius: 10px;
     font-size: 20px;
 }
 
 .container .winner .btn:hover{
-    background-color: rgba(255, 130, 0, 0.6);
-    border-color: rgba(255, 130, 0, 0.6) ;
+    background-color: #024e1d;
+    border-color: #024e1d ;
 }
 
 .container .header {
@@ -49,13 +49,12 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
 }
 
 .container .header img {
-    width: 100%;
-    position: absolute;
-    top: 30px ;
-
+    width: 30%;
+   border-radius: 50%;
 }
 
 
@@ -82,7 +81,7 @@
 .spinner{
     height: 100vh;
     z-index: 100;
-    background-color: rgba(255, 130, 0, 0.95);
+    background-color: #059436 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,19 +148,19 @@
 
 .inputfile-1 + label {
     color: #fff;
-    background-color: rgba(255, 130, 0, 0.95);
+    background-color: #059436 ;
 }
 
 .inputfile-1:focus + label,
 .inputfile-1.has-focus + label,
 .inputfile-1 + label:hover {
-    background-color: rgba(255, 130, 0, 0.6);
+    background-color: #024e1d;
 }
 
 
 
 /* .custom-input-file {
-    background-color: rgba(255, 130, 0, 0.95);
+    background-color: #059436 ;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -174,7 +173,7 @@
     text-align: center;
     border-radius: 15px;
     width: 100%;
-    border: 1px solid rgba(255, 130, 0, 0.95);
+    border: 1px solid #059436 ;
     margin: 10px;
   }
 
