@@ -185,7 +185,7 @@ export const SortPage = () => {
         <Spin spinning={loading} size="large" tip="Cargando...">
             <Row style={{padding:'20px'}} >
                 <Col span={24} >
-                    <Title type='warning' style={{ paddingTop: '20px', textAlign: 'center', width: '100%' }} >Sorteos RM</Title>
+                    <Title type='warning' style={{color:"#024e1d" ,paddingTop: '20px', textAlign: 'center', width: '100%' }} >Sorteos RM</Title>
                 </Col>
                 <Col span={24} >
                     <Table columns={columns} dataSource={sortData} bordered pagination={true} scroll={{ x: 1500, y: 300 }} sticky />
@@ -199,7 +199,7 @@ export const SortPage = () => {
                     </ExportSheet>
                 </Col>
                 <Col span={24} >
-                    <Title type='warning' style={{ paddingTop: '20px', textAlign: 'center', width: '100%' }} >Sorteos Regiones</Title>
+                    <Title type='warning' style={{ color:"#024e1d" ,paddingTop: '20px', textAlign: 'center', width: '100%' }} >Sorteos Regiones</Title>
                 </Col>
                 <Col span={24} >
                     <Table columns={columns} dataSource={sortRegData} bordered pagination={true} scroll={{ x: 1500, y: 300 }} sticky />

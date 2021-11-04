@@ -22,10 +22,10 @@ export const RouterPage = () => {
                     <Header>
                         <Menu theme="dark" mode="horizontal" >
                             <Menu.Item key="/">
-                                <Link to='/' >Sorteo RM</Link>
+                                <Link to='/' >Sorteo Andina</Link>
                             </Menu.Item>
                             <Menu.Item key="region">
-                                <Link to='/region' >Sorteo Región</Link>
+                                <Link to='/region' >Sorteo Embonor</Link>
                             </Menu.Item>
                             <Menu.Item key="sorteos">
                                 <Link to='/sorteos' >Sorteos</Link>
