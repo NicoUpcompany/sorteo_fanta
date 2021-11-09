@@ -25,7 +25,7 @@ export function getSortApi(){
 export function postSortApi(data){
     const url = `${basePath}/${apiVersion}/sort`;
 
-    console.log(JSON.stringify(data));
+ 
     const params = {
         method:"POST",
         body: JSON.stringify(data),

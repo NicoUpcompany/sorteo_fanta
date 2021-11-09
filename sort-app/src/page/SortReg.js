@@ -91,10 +91,6 @@ export const SortReg = () => {
     const sortear = (participantes) => {
         const numGanador = Math.floor(Math.random() * (participantes.length));
 
-        console.log(participantes);
-
-        console.log(numGanador);
-
         if (participantes.length === 0) {
             notification["error"]({
                 message: "No hay suficientes participantes "
@@ -166,7 +162,7 @@ export const SortReg = () => {
                     return false;
                 }
                 winners.push({ nombre, numero, premio: 'Mesa Dj' });
-                if (index === youtube) {
+                if (index === mesas) {
                     setGanadores(winners)
                 }
             }
@@ -214,19 +210,38 @@ export const SortReg = () => {
             winner: ganador.nombre,
             n_sort: sortsReg + 1,
             phone: numero,
-            premio, premio,
+            premio,
             requirements: true
         }
 
         nuevoSorteo(data, true);
         let newArray = ganadores.filter(ganador => ganador.numero !== numero);
         setGanadores(newArray);
+        if(newArray.length === 0 ) {
+            setGanador(false);
+        }
+
     }
 
-    const noCumple = (e, numero) =>{
+    const noCumple = (e, numero, premio) =>{
         e.preventDefault();
+        const data = {
+            winner: ganador.nombre,
+            n_sort: sortsReg + 1,
+            phone: numero,
+            premio,
+            requirements: false
+        }
+
+        //el false es para guardar en la api el rm
+        nuevoSorteo(data, false);
         let newArray = ganadores.filter(ganador => ganador.numero !== numero);
         setGanadores(newArray);
+ 
+        if(newArray.length === 0 ) {
+            setGanador(false);
+        }
+
     }
 
 
@@ -256,7 +271,6 @@ export const SortReg = () => {
                                         <span className="iborrainputfile">Seleccionar archivo</span>
                                     </label>
                                     {/* Youtube */}
-
                                     <Select
                                         showSearch
                                         style={{ width: 200, margin: '10px 0', borderRadius: '10px' }}

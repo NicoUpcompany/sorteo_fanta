@@ -23,7 +23,7 @@ function getSort(req, res) {
 
 async function postSort(req, res) {
 
-	const { n_sort, winner, requirements, phone } = req.body;
+	const { n_sort, winner, requirements, phone, premio } = req.body;
 	const sort = new Sort();
 	const time = moment().format();
 	const sortTime = momentTimezone.tz(time, "America/Santiago");
@@ -32,6 +32,7 @@ async function postSort(req, res) {
 	sort.requirements = requirements;
 	sort.phone = phone;
 	sort.time_sort = sortTime;
+	sort.premio = premio;
 
 
 	sort.save((err, sortStored) =>{
